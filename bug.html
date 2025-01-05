@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will not be visible if the bug occurs.
+  </div>
+  <script>
+    //This is the buggy code. The bug is that the script tries to access the element before it has loaded fully
+    document.getElementById("myDiv").style.display = "none";
+  </script>
+</body>
+</html>
